@@ -133,7 +133,7 @@ function addProperty(event) {
   event.preventDefault();
   const title = document.getElementById('title').value;
   const location = document.getElementById('location').value;
-  const price = document.getElementById('price').value;
+  const price = parseFloat(document.getElementById('price').value);
   const type = document.getElementById('type').value;
   const facing = document.getElementById('facing').value;
 
@@ -143,3 +143,6 @@ function addProperty(event) {
   alert('Property added successfully!');
   document.getElementById('propertyForm').reset();
 }
+
+
+
